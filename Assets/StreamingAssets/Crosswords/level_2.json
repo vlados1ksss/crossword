@@ -1,0 +1,102 @@
+{
+  "id": 2,
+  "difficulty": 2,
+  "words": [
+    {
+      "id": "w1",
+      "answer": "ЧАСЫ",
+      "question": "Показывают время",
+      "row": 0,
+      "col": 0,
+      "direction": "across"
+    },
+    {
+      "id": "w2",
+      "answer": "СНЕГ",
+      "question": "Белые хлопья, падающие зимой",
+      "row": 0,
+      "col": 2,
+      "direction": "down"
+    },
+    {
+      "id": "w3",
+      "answer": "ПОДАРОК",
+      "question": "Его дарят на день рождения",
+      "row": 0,
+      "col": 9,
+      "direction": "down"
+    },
+    {
+      "id": "w4",
+      "answer": "ПОДУШКА",
+      "question": "На неё кладут голову во время сна",
+      "row": 1,
+      "col": 4,
+      "direction": "down"
+    },
+    {
+      "id": "w5",
+      "answer": "АПЕЛЬСИН",
+      "question": "Оранжевый цитрусовый фрукт",
+      "row": 1,
+      "col": 7,
+      "direction": "down"
+    },
+    {
+      "id": "w6",
+      "answer": "ВЕЛОСИПЕД",
+      "question": "Двухколёсный транспорт с педалями",
+      "row": 2,
+      "col": 1,
+      "direction": "across"
+    },
+    {
+      "id": "w7",
+      "answer": "БАБОЧКА",
+      "question": "Насекомое с яркими крыльями",
+      "row": 4,
+      "col": 1,
+      "direction": "down"
+    },
+    {
+      "id": "w8",
+      "answer": "КАРАНДАШ",
+      "question": "Им рисуют, а когда он затупится — точат",
+      "row": 4,
+      "col": 11,
+      "direction": "down"
+    },
+    {
+      "id": "w9",
+      "answer": "ОБЛАКО",
+      "question": "Белое и пушистое, плывёт по небу",
+      "row": 6,
+      "col": 0,
+      "direction": "across"
+    },
+    {
+      "id": "w10",
+      "answer": "ПИНГВИН",
+      "question": "Птица, которая не летает, но отлично плавает",
+      "row": 8,
+      "col": 5,
+      "direction": "across"
+    },
+    {
+      "id": "w11",
+      "answer": "ШКОЛА",
+      "question": "Там учатся дети",
+      "row": 9,
+      "col": 0,
+      "direction": "across"
+    },
+    {
+      "id": "w12",
+      "answer": "РАДУГА",
+      "question": "Разноцветная дуга на небе после дождя",
+      "row": 10,
+      "col": 6,
+      "direction": "across"
+    }
+  ]
+}

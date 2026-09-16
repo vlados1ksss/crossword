@@ -1,0 +1,102 @@
+{
+  "id": 1,
+  "difficulty": 1,
+  "words": [
+    {
+      "id": "w1",
+      "answer": "МЯЧ",
+      "question": "Круглый предмет для игры в футбол",
+      "row": 0,
+      "col": 2,
+      "direction": "across"
+    },
+    {
+      "id": "w2",
+      "answer": "ЯБЛОКО",
+      "question": "Круглый фрукт, бывает красным и зелёным",
+      "row": 0,
+      "col": 3,
+      "direction": "down"
+    },
+    {
+      "id": "w3",
+      "answer": "ХЛЕБ",
+      "question": "Его пекут из муки",
+      "row": 0,
+      "col": 6,
+      "direction": "down"
+    },
+    {
+      "id": "w4",
+      "answer": "ЛУНА",
+      "question": "Светит на небе ночью",
+      "row": 1,
+      "col": 6,
+      "direction": "across"
+    },
+    {
+      "id": "w5",
+      "answer": "СОЛНЦЕ",
+      "question": "Светит на небе днём",
+      "row": 2,
+      "col": 1,
+      "direction": "across"
+    },
+    {
+      "id": "w6",
+      "answer": "ЗИМА",
+      "question": "Самое холодное время года",
+      "row": 3,
+      "col": 0,
+      "direction": "down"
+    },
+    {
+      "id": "w7",
+      "answer": "СОБАКА",
+      "question": "Верный друг человека, который лает",
+      "row": 4,
+      "col": 5,
+      "direction": "down"
+    },
+    {
+      "id": "w8",
+      "answer": "МОЛОКО",
+      "question": "Белый напиток, который даёт корова",
+      "row": 5,
+      "col": 0,
+      "direction": "across"
+    },
+    {
+      "id": "w9",
+      "answer": "ЛЕТО",
+      "question": "Самое тёплое время года",
+      "row": 5,
+      "col": 2,
+      "direction": "down"
+    },
+    {
+      "id": "w10",
+      "answer": "РУКА",
+      "question": "Часть тела с пятью пальцами",
+      "row": 5,
+      "col": 9,
+      "direction": "down"
+    },
+    {
+      "id": "w11",
+      "answer": "СТОЛ",
+      "question": "За ним обедают всей семьёй",
+      "row": 8,
+      "col": 0,
+      "direction": "across"
+    },
+    {
+      "id": "w12",
+      "answer": "КНИГА",
+      "question": "Её читают, перелистывая страницы",
+      "row": 8,
+      "col": 5,
+      "direction": "across"
+    }
+  ]
+}

@@ -1,0 +1,102 @@
+{
+  "id": 3,
+  "difficulty": 3,
+  "words": [
+    {
+      "id": "w1",
+      "answer": "АЛФАВИТ",
+      "question": "Все буквы языка в установленном порядке",
+      "row": 0,
+      "col": 4,
+      "direction": "across"
+    },
+    {
+      "id": "w2",
+      "answer": "ВУЛКАН",
+      "question": "Гора, извергающая лаву",
+      "row": 0,
+      "col": 8,
+      "direction": "down"
+    },
+    {
+      "id": "w3",
+      "answer": "МОЛНИЯ",
+      "question": "Яркая вспышка во время грозы",
+      "row": 2,
+      "col": 6,
+      "direction": "across"
+    },
+    {
+      "id": "w4",
+      "answer": "ЭКВАТОР",
+      "question": "Линия, делящая Землю на северное и южное полушария",
+      "row": 3,
+      "col": 1,
+      "direction": "down"
+    },
+    {
+      "id": "w5",
+      "answer": "ПУСТЫНЯ",
+      "question": "Сахара или Гоби",
+      "row": 3,
+      "col": 5,
+      "direction": "down"
+    },
+    {
+      "id": "w6",
+      "answer": "СКЕЛЕТ",
+      "question": "Совокупность всех костей организма",
+      "row": 4,
+      "col": 3,
+      "direction": "down"
+    },
+    {
+      "id": "w7",
+      "answer": "СТОЛИЦА",
+      "question": "Главный город государства",
+      "row": 4,
+      "col": 11,
+      "direction": "down"
+    },
+    {
+      "id": "w8",
+      "answer": "КОСМОНАВТ",
+      "question": "Первым им стал Юрий Гагарин",
+      "row": 5,
+      "col": 3,
+      "direction": "across"
+    },
+    {
+      "id": "w9",
+      "answer": "ОРКЕСТР",
+      "question": "Коллектив музыкантов под управлением дирижёра",
+      "row": 5,
+      "col": 7,
+      "direction": "down"
+    },
+    {
+      "id": "w10",
+      "answer": "АЙСБЕРГ",
+      "question": "Огромная плавучая глыба льда",
+      "row": 5,
+      "col": 9,
+      "direction": "down"
+    },
+    {
+      "id": "w11",
+      "answer": "ОКЕАН",
+      "question": "Огромный водоём, например Тихий или Атлантический",
+      "row": 8,
+      "col": 1,
+      "direction": "across"
+    },
+    {
+      "id": "w12",
+      "answer": "БАРОМЕТР",
+      "question": "Прибор для измерения атмосферного давления",
+      "row": 11,
+      "col": 0,
+      "direction": "across"
+    }
+  ]
+}
