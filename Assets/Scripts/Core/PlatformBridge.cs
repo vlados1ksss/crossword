@@ -1,4 +1,6 @@
 using System;
+using System.Runtime.InteropServices;
+using UnityEngine;
 #if PLUGIN_YG_2
 using YG;
 #endif
@@ -11,6 +13,11 @@ namespace CrosswordGame
     /// </summary>
     public static class PlatformBridge
     {
+#if UNITY_WEBGL && !UNITY_EDITOR
+        [DllImport("__Internal")]
+        private static extern string CrosswordGetSdkLanguage();
+#endif
+
         private static bool _gameReadySent;
         private static bool _gameplayActive;
 
@@ -47,13 +54,18 @@ namespace CrosswordGame
 #endif
         }
 
-        /// <summary>Язык, предлагаемый платформой. Если модуль локализации YG2 не установлен — русский.</summary>
-        public static string GetPlatformLanguage()
+        /// <summary>
+        /// Язык, определённый SDK Яндекс Игр (environment.i18n.lang). Вызывать после инициализации SDK (WhenSdkReady).
+        /// В редакторе — язык симуляции YG2, на других платформах — язык системы. Пустая строка, если язык неизвестен.
+        /// </summary>
+        public static string GetSdkLanguage()
         {
-#if PLUGIN_YG_2 && Localization_yg
-            return YG2.lang;
+#if UNITY_WEBGL && !UNITY_EDITOR
+            return CrosswordGetSdkLanguage();
+#elif PLUGIN_YG_2 && UNITY_EDITOR
+            return YG2.infoYG.Simulation.language;
 #else
-            return LocalizationManager.DefaultLanguage;
+            return Application.systemLanguage == SystemLanguage.English ? "en" : "ru";
 #endif
         }
 

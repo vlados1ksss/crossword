@@ -18,6 +18,7 @@ namespace CrosswordGame.EditorTools
         public static Sprite RoundedLarge => LoadSprite("rounded_large.png");
         public static Sprite RoundedSmall => LoadSprite("rounded_small.png");
         public static Sprite Circle => LoadSprite("circle.png");
+        public static Sprite BackspaceIcon => LoadSprite("icon_backspace.png");
 
         private static Sprite LoadSprite(string file) => AssetDatabase.LoadAssetAtPath<Sprite>($"{ArtFolder}/{file}");
 
@@ -30,6 +31,60 @@ namespace CrosswordGame.EditorTools
             CreateRoundedSprite("rounded_large.png", 96, 28);
             CreateRoundedSprite("rounded_small.png", 48, 10);
             CreateRoundedSprite("circle.png", 64, 32);
+            CreateBackspaceIcon("icon_backspace.png", 128);
+        }
+
+        /// <summary>Белая иконка «стереть»: стрелка влево с вырезанным крестиком. Цвет задаётся через Image.color.</summary>
+        private static void CreateBackspaceIcon(string file, int size)
+        {
+            string path = $"{ArtFolder}/{file}";
+            if (!File.Exists(path))
+            {
+                const int samples = 4; // сглаживание краёв
+                var texture = new Texture2D(size, size, TextureFormat.RGBA32, false);
+                var pixels = new Color32[size * size];
+                for (int y = 0; y < size; y++)
+                for (int x = 0; x < size; x++)
+                {
+                    int covered = 0;
+                    for (int sy = 0; sy < samples; sy++)
+                    for (int sx = 0; sx < samples; sx++)
+                    {
+                        float u = (x + (sx + 0.5f) / samples) / size;
+                        float v = (y + (sy + 0.5f) / samples) / size;
+                        if (IsBackspaceShape(u, v)) covered++;
+                    }
+                    pixels[y * size + x] = new Color32(255, 255, 255, (byte)(255 * covered / (samples * samples)));
+                }
+                texture.SetPixels32(pixels);
+                File.WriteAllBytes(path, texture.EncodeToPNG());
+                Object.DestroyImmediate(texture);
+                AssetDatabase.ImportAsset(path);
+            }
+
+            var importer = (TextureImporter)AssetImporter.GetAtPath(path);
+            importer.textureType = TextureImporterType.Sprite;
+            importer.spriteImportMode = SpriteImportMode.Single;
+            importer.mipmapEnabled = false;
+            importer.alphaIsTransparency = true;
+            importer.filterMode = FilterMode.Bilinear;
+            importer.textureCompression = TextureImporterCompression.Uncompressed;
+            importer.SaveAndReimport();
+        }
+
+        private static bool IsBackspaceShape(float u, float v)
+        {
+            const float left = 0.06f, neck = 0.34f, right = 0.94f, halfHeight = 0.28f;
+            float dy = Mathf.Abs(v - 0.5f);
+            if (u < left || u > right || dy > halfHeight) return false;
+            if (u < neck && dy > (u - left) / (neck - left) * halfHeight) return false; // остриё стрелки
+
+            // Прозрачный крестик внутри прямоугольной части.
+            float px = u - 0.63f, py = v - 0.5f;
+            const float arm = 0.12f, thickness = 0.06f;
+            bool inCross = Mathf.Abs(px) <= arm && Mathf.Abs(py) <= arm &&
+                           (Mathf.Abs(px - py) <= thickness || Mathf.Abs(px + py) <= thickness);
+            return !inCross;
         }
 
         private static void CreateRoundedSprite(string file, int size, int radius)

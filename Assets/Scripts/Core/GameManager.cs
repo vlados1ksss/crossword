@@ -1,4 +1,5 @@
 using System;
+using System.Collections;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -50,7 +51,8 @@ namespace CrosswordGame
 
             Application.targetFrameRate = 60;
 
-            LocalizationManager.Initialize(PlatformBridge.GetPlatformLanguage());
+            // До ответа SDK интерфейс работает на языке по умолчанию.
+            LocalizationManager.EnsureInitialized();
 
             Save = new SaveManager();
             Save.Load();
@@ -59,7 +61,35 @@ namespace CrosswordGame
             Ads.Initialize();
 
             Levels = new LevelManager();
-            StartCoroutine(Levels.LoadAll(OnLevelsLoaded));
+            StartCoroutine(InitializeRoutine());
+        }
+
+        private const float SdkWaitTimeout = 5f;
+
+        /// <summary>Ждёт инициализацию SDK, определяет язык через SDK и загружает уровни.</summary>
+        private IEnumerator InitializeRoutine()
+        {
+            bool sdkReady = false;
+            PlatformBridge.WhenSdkReady(() => sdkReady = true);
+
+            float waited = 0f;
+            while (!sdkReady && waited < SdkWaitTimeout)
+            {
+                waited += Time.unscaledDeltaTime;
+                yield return null;
+            }
+            if (sdkReady)
+            {
+                LocalizationManager.Initialize(PlatformBridge.GetSdkLanguage());
+            }
+            else
+            {
+                // SDK запоздал: запускаемся на языке по умолчанию и применяем язык SDK, когда он станет доступен.
+                Debug.LogWarning("[Loc] SDK is not initialized in time, default language is used until it is ready.");
+                PlatformBridge.WhenSdkReady(() => LocalizationManager.Initialize(PlatformBridge.GetSdkLanguage()));
+            }
+
+            yield return Levels.LoadAll(OnLevelsLoaded);
         }
 
         private void OnLevelsLoaded()

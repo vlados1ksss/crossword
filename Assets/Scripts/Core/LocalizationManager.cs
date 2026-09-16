@@ -41,14 +41,24 @@ namespace CrosswordGame
 
         public static bool IsInitialized => Current != null;
 
-        /// <summary>Выбирает язык платформы, если он поддерживается, иначе русский.</summary>
-        public static void Initialize(string preferredLanguage)
+        /// <summary>
+        /// Выбирает язык по коду из SDK платформы: поддерживаемый язык используется как есть,
+        /// русскоязычные регионы (be, kk, uk, uz) получают русский, остальные — язык по умолчанию.
+        /// </summary>
+        public static void Initialize(string sdkLanguage)
         {
+            string code = string.IsNullOrEmpty(sdkLanguage) ? string.Empty : sdkLanguage.Trim().ToLowerInvariant();
             string lang = DefaultLanguage;
-            if (!string.IsNullOrEmpty(preferredLanguage) && Array.IndexOf(SupportedLanguages, preferredLanguage) >= 0)
-                lang = preferredLanguage;
+            if (Array.IndexOf(SupportedLanguages, code) >= 0)
+                lang = code;
+            else if (Array.IndexOf(RussianRegionLanguages, code) >= 0 && Array.IndexOf(SupportedLanguages, "ru") >= 0)
+                lang = "ru";
+
+            Debug.Log($"[Loc] SDK language '{sdkLanguage}' -> {lang}");
             SetLanguage(lang);
         }
+
+        private static readonly string[] RussianRegionLanguages = { "ru", "be", "kk", "uk", "uz" };
 
         public static void SetLanguage(string lang)
         {
@@ -76,7 +86,7 @@ namespace CrosswordGame
 
         public static void EnsureInitialized()
         {
-            if (!IsInitialized) Initialize(DefaultLanguage);
+            if (!IsInitialized) SetLanguage(DefaultLanguage);
         }
 
         public static string Get(string key)

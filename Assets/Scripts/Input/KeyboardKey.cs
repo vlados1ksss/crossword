@@ -18,6 +18,7 @@ namespace CrosswordGame
         [SerializeField] private Button button;
         [SerializeField] private Image background;
         [SerializeField] private Text label;
+        [SerializeField] private Image icon;   // используется вместо текста (например, Backspace)
         [SerializeField] private LayoutElement layoutElement;
 
         public KeyType Type { get; private set; }
@@ -32,8 +33,17 @@ namespace CrosswordGame
             button.onClick.AddListener(() => Pressed?.Invoke(this));
         }
 
-        public void Setup(KeyType type, char letter, string text, float widthMultiplier)
+        public void Setup(KeyType type, char letter, string text, float widthMultiplier, Sprite iconSprite = null)
         {
+            // Иконка вместо символа: не все Unicode-символы есть в шрифте, а в WebGL нет системных шрифтов для подстановки.
+            bool hasIcon = iconSprite != null && icon != null;
+            if (icon != null)
+            {
+                icon.gameObject.SetActive(hasIcon);
+                icon.sprite = iconSprite;
+            }
+            label.gameObject.SetActive(!hasIcon);
+
             Type = type;
             Letter = letter;
             WidthMultiplier = widthMultiplier;
@@ -55,6 +65,7 @@ namespace CrosswordGame
                     label.color = UIPalette.TextPrimary;
                     break;
             }
+            if (icon != null) icon.color = label.color;
         }
 
         public void SetSize(float unitWidth, float height)

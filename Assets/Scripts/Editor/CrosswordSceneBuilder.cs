@@ -29,7 +29,7 @@ namespace CrosswordGame.EditorTools
         {
             if (!EditorSceneManager.SaveCurrentModifiedScenesIfUserWantsTo()) return;
 
-            LocalizationManager.Initialize(LocalizationManager.DefaultLanguage);
+            LocalizationManager.SetLanguage(LocalizationManager.DefaultLanguage);
             EnsureSprites();
             Directory.CreateDirectory(PrefabFolder);
             Directory.CreateDirectory(SceneFolder);
@@ -172,10 +172,19 @@ namespace CrosswordGame.EditorTools
             Stretch(label.rectTransform);
             label.horizontalOverflow = HorizontalWrapMode.Overflow;
 
+            var iconRect = Create("Icon", root);
+            iconRect.anchorMin = new Vector2(0.15f, 0.15f);
+            iconRect.anchorMax = new Vector2(0.85f, 0.85f);
+            iconRect.offsetMin = iconRect.offsetMax = Vector2.zero;
+            var icon = AddImage(iconRect, null, UIPalette.TextPrimary, false);
+            icon.preserveAspect = true;
+            iconRect.gameObject.SetActive(false);
+
             var key = root.gameObject.AddComponent<KeyboardKey>();
             SetField(key, "button", button);
             SetField(key, "background", image);
             SetField(key, "label", label);
+            SetField(key, "icon", icon);
             SetField(key, "layoutElement", layoutElement);
             return root;
         }
@@ -536,6 +545,7 @@ namespace CrosswordGame.EditorTools
             SetField(keyboard, "rowPrefab", prefabs.KeyboardRow);
             SetField(keyboard, "keyPrefab", prefabs.Key);
             SetField(keyboard, "canvasGroup", keyboardGroup);
+            SetField(keyboard, "backspaceIcon", BackspaceIcon);
 
             SetField(layout, "topBar", topBar);
             SetField(layout, "crosswordArea", crosswordArea);

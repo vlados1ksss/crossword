@@ -14,6 +14,7 @@ namespace CrosswordGame
         [SerializeField] private RectTransform rowsRoot;
         [SerializeField] private RectTransform rowPrefab;
         [SerializeField] private KeyboardKey keyPrefab;
+        [SerializeField] private Sprite backspaceIcon;
         [SerializeField] private CanvasGroup canvasGroup;
         [SerializeField] private float spacing = 8f;
         [SerializeField] private float disabledAlpha = 0.45f;
@@ -45,7 +46,7 @@ namespace CrosswordGame
                 if (r == layout.keyboardRows.Length - 1)
                 {
                     foreach (char c in layout.keyboardRows[r]) AddKey(row, KeyType.Letter, c, c.ToString(), 1f);
-                    AddKey(row, KeyType.Backspace, '\0', "←", 1.6f);
+                    AddKey(row, KeyType.Backspace, '\0', "<", 1.6f, backspaceIcon);
                 }
                 else
                 {
@@ -71,11 +72,11 @@ namespace CrosswordGame
             return keys;
         }
 
-        private void AddKey(List<KeyboardKey> row, KeyType type, char letter, string text, float width)
+        private void AddKey(List<KeyboardKey> row, KeyType type, char letter, string text, float width, Sprite icon = null)
         {
             var key = Instantiate(keyPrefab, _rowRects[_rows.IndexOf(row)]);
             key.gameObject.SetActive(true);
-            key.Setup(type, letter, text, width);
+            key.Setup(type, letter, text, width, icon);
             key.Pressed += OnKeyPressed;
             row.Add(key);
         }
