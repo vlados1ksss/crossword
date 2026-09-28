@@ -6,7 +6,9 @@ namespace CrosswordGame
     [Serializable]
     public class SaveData
     {
-        public int version = 1;
+        public const int CurrentVersion = 2;
+
+        public int version = CurrentVersion;
         public int selectedLevel = 1;          // номер последнего выбранного уровня
         public int maxUnlockedLevel = 1;       // уровни 1..maxUnlockedLevel открыты
         public List<LevelProgress> levels = new List<LevelProgress>();

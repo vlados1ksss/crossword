@@ -1,0 +1,102 @@
+{
+  "id": 10,
+  "difficulty": 3,
+  "words": [
+    {
+      "id": "w1",
+      "answer": "ГАЛАКТИКА",
+      "question": "Звёздная система, наша называется Млечный Путь",
+      "row": 0,
+      "col": 11,
+      "direction": "down"
+    },
+    {
+      "id": "w2",
+      "answer": "ВАКЦИНА",
+      "question": "Препарат для прививки от болезни",
+      "row": 1,
+      "col": 5,
+      "direction": "across"
+    },
+    {
+      "id": "w3",
+      "answer": "ПИРАМИДА",
+      "question": "Усыпальница египетских фараонов",
+      "row": 2,
+      "col": 3,
+      "direction": "down"
+    },
+    {
+      "id": "w4",
+      "answer": "ПАПИРУС",
+      "question": "Древний писчий материал из тростника",
+      "row": 3,
+      "col": 0,
+      "direction": "across"
+    },
+    {
+      "id": "w5",
+      "answer": "МИКРОСКОП",
+      "question": "Прибор, увеличивающий самые мелкие объекты",
+      "row": 4,
+      "col": 9,
+      "direction": "down"
+    },
+    {
+      "id": "w6",
+      "answer": "ЗАТМЕНИЕ",
+      "question": "Явление, когда Луна закрывает Солнце",
+      "row": 4,
+      "col": 14,
+      "direction": "down"
+    },
+    {
+      "id": "w7",
+      "answer": "ТЕРМОМЕТР",
+      "question": "Прибор для измерения температуры",
+      "row": 5,
+      "col": 1,
+      "direction": "down"
+    },
+    {
+      "id": "w8",
+      "answer": "БИБЛИОТЕКА",
+      "question": "Там хранят и выдают книги",
+      "row": 5,
+      "col": 5,
+      "direction": "across"
+    },
+    {
+      "id": "w9",
+      "answer": "АРХИТЕКТОР",
+      "question": "Тот, кто проектирует здания",
+      "row": 7,
+      "col": 0,
+      "direction": "across"
+    },
+    {
+      "id": "w10",
+      "answer": "КРЕПОСТЬ",
+      "question": "Укреплённое сооружение со стенами и башнями",
+      "row": 7,
+      "col": 6,
+      "direction": "down"
+    },
+    {
+      "id": "w11",
+      "answer": "ТЕЛЕСКОП",
+      "question": "Прибор для наблюдения за звёздами",
+      "row": 11,
+      "col": 0,
+      "direction": "across"
+    },
+    {
+      "id": "w12",
+      "answer": "СКУЛЬПТОР",
+      "question": "Тот, кто создаёт статуи",
+      "row": 14,
+      "col": 2,
+      "direction": "across"
+    }
+  ]
+}

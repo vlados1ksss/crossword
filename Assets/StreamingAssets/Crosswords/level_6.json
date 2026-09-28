@@ -1,0 +1,102 @@
+{
+  "id": 6,
+  "difficulty": 2,
+  "words": [
+    {
+      "id": "w1",
+      "answer": "ЧЕРЕПАХА",
+      "question": "Носит свой дом-панцирь на спине",
+      "row": 0,
+      "col": 6,
+      "direction": "down"
+    },
+    {
+      "id": "w2",
+      "answer": "КУЗНЕЧИК",
+      "question": "Зелёный прыгун, стрекочет в траве",
+      "row": 1,
+      "col": 2,
+      "direction": "across"
+    },
+    {
+      "id": "w3",
+      "answer": "МОРОЖЕНОЕ",
+      "question": "Холодное лакомство в вафельном рожке",
+      "row": 3,
+      "col": 1,
+      "direction": "across"
+    },
+    {
+      "id": "w4",
+      "answer": "ОБЕЗЬЯНА",
+      "question": "Ловко лазает по деревьям и любит бананы",
+      "row": 3,
+      "col": 8,
+      "direction": "down"
+    },
+    {
+      "id": "w5",
+      "answer": "КЕНГУРУ",
+      "question": "Австралийское животное с сумкой",
+      "row": 4,
+      "col": 11,
+      "direction": "down"
+    },
+    {
+      "id": "w6",
+      "answer": "ВАРЕНЬЕ",
+      "question": "Сладкое, его варят из ягод",
+      "row": 5,
+      "col": 5,
+      "direction": "across"
+    },
+    {
+      "id": "w7",
+      "answer": "ТАРЕЛКА",
+      "question": "Из неё едят суп и второе",
+      "row": 6,
+      "col": 1,
+      "direction": "down"
+    },
+    {
+      "id": "w8",
+      "answer": "ЛЕСТНИЦА",
+      "question": "По ней поднимаются на верхний этаж",
+      "row": 6,
+      "col": 3,
+      "direction": "down"
+    },
+    {
+      "id": "w9",
+      "answer": "КАЛЕНДАРЬ",
+      "question": "Показывает дни, недели и месяцы",
+      "row": 7,
+      "col": 0,
+      "direction": "across"
+    },
+    {
+      "id": "w10",
+      "answer": "ВИНОГРАД",
+      "question": "Растёт гроздьями, из него получается изюм",
+      "row": 9,
+      "col": 6,
+      "direction": "across"
+    },
+    {
+      "id": "w11",
+      "answer": "СКРИПКА",
+      "question": "Струнный инструмент, на котором играют смычком",
+      "row": 11,
+      "col": 0,
+      "direction": "across"
+    },
+    {
+      "id": "w12",
+      "answer": "КАСТРЮЛЯ",
+      "question": "В ней варят суп",
+      "row": 13,
+      "col": 2,
+      "direction": "across"
+    }
+  ]
+}

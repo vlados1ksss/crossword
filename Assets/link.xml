@@ -1,0 +1,5 @@
+<!-- Коллбэки Yandex Mobile Ads приходят из Java через AndroidJavaProxy по имени метода,
+     поэтому сборка не должна вырезаться при стриппинге кода. -->
+<linker>
+  <assembly fullname="YandexMobileAds" preserve="all" />
+</linker>

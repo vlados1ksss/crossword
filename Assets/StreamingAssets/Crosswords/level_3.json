@@ -1,101 +1,101 @@
 {
   "id": 3,
-  "difficulty": 3,
+  "difficulty": 1,
   "words": [
     {
       "id": "w1",
-      "answer": "АЛФАВИТ",
-      "question": "Все буквы языка в установленном порядке",
+      "answer": "ВЕТЕР",
+      "question": "Он качает деревья и гонит облака",
       "row": 0,
-      "col": 4,
-      "direction": "across"
+      "col": 6,
+      "direction": "down"
     },
     {
       "id": "w2",
-      "answer": "ВУЛКАН",
-      "question": "Гора, извергающая лаву",
+      "answer": "МОРОЗ",
+      "question": "Сильный холод зимой",
       "row": 0,
       "col": 8,
       "direction": "down"
     },
     {
       "id": "w3",
-      "answer": "МОЛНИЯ",
-      "question": "Яркая вспышка во время грозы",
-      "row": 2,
-      "col": 6,
+      "answer": "МАМА",
+      "question": "Самый близкий человек, её праздник в марте",
+      "row": 1,
+      "col": 1,
       "direction": "across"
     },
     {
       "id": "w4",
-      "answer": "ЭКВАТОР",
-      "question": "Линия, делящая Землю на северное и южное полушария",
-      "row": 3,
-      "col": 1,
+      "answer": "МЕДВЕДЬ",
+      "question": "Он спит в берлоге всю зиму",
+      "row": 1,
+      "col": 3,
       "direction": "down"
     },
     {
       "id": "w5",
-      "answer": "ПУСТЫНЯ",
-      "question": "Сахара или Гоби",
+      "answer": "РЕКА",
+      "question": "Течёт между берегами, в ней плавают рыбы",
       "row": 3,
-      "col": 5,
+      "col": 0,
       "direction": "down"
     },
     {
       "id": "w6",
-      "answer": "СКЕЛЕТ",
-      "question": "Совокупность всех костей организма",
-      "row": 4,
-      "col": 3,
-      "direction": "down"
-    },
-    {
-      "id": "w7",
-      "answer": "СТОЛИЦА",
-      "question": "Главный город государства",
-      "row": 4,
-      "col": 11,
-      "direction": "down"
-    },
-    {
-      "id": "w8",
-      "answer": "КОСМОНАВТ",
-      "question": "Первым им стал Юрий Гагарин",
-      "row": 5,
+      "answer": "ДЕРЕВО",
+      "question": "У него ствол, ветки и листья",
+      "row": 3,
       "col": 3,
       "direction": "across"
     },
     {
+      "id": "w7",
+      "answer": "САХАР",
+      "question": "Его кладут в чай, чтобы стало сладко",
+      "row": 3,
+      "col": 10,
+      "direction": "down"
+    },
+    {
+      "id": "w8",
+      "answer": "КОЛЕСО",
+      "question": "Оно круглое и крутится",
+      "row": 5,
+      "col": 0,
+      "direction": "across"
+    },
+    {
       "id": "w9",
-      "answer": "ОРКЕСТР",
-      "question": "Коллектив музыкантов под управлением дирижёра",
+      "answer": "ОГУРЕЦ",
+      "question": "Зелёный овощ для салата",
+      "row": 5,
+      "col": 5,
+      "direction": "down"
+    },
+    {
+      "id": "w10",
+      "answer": "ГНЕЗДО",
+      "question": "Птичий дом на дереве",
       "row": 5,
       "col": 7,
       "direction": "down"
     },
     {
-      "id": "w10",
-      "answer": "АЙСБЕРГ",
-      "question": "Огромная плавучая глыба льда",
-      "row": 5,
-      "col": 9,
-      "direction": "down"
-    },
-    {
       "id": "w11",
-      "answer": "ОКЕАН",
-      "question": "Огромный водоём, например Тихий или Атлантический",
-      "row": 8,
-      "col": 1,
+      "answer": "НОГА",
+      "question": "Ею пинают мяч",
+      "row": 6,
+      "col": 7,
       "direction": "across"
     },
     {
       "id": "w12",
-      "answer": "БАРОМЕТР",
-      "question": "Прибор для измерения атмосферного давления",
-      "row": 11,
-      "col": 0,
+      "answer": "ЗВЕЗДА",
+      "question": "Маленький огонёк в ночном небе",
+      "row": 9,
+      "col": 3,
       "direction": "across"
     }
   ]

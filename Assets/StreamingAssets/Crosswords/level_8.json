@@ -1,0 +1,102 @@
+{
+  "id": 8,
+  "difficulty": 2,
+  "words": [
+    {
+      "id": "w1",
+      "answer": "КРОКОДИЛ",
+      "question": "Зелёный хищник с огромной пастью",
+      "row": 0,
+      "col": 0,
+      "direction": "down"
+    },
+    {
+      "id": "w2",
+      "answer": "ПАУТИНА",
+      "question": "Сеть, которую плетёт паук",
+      "row": 0,
+      "col": 5,
+      "direction": "down"
+    },
+    {
+      "id": "w3",
+      "answer": "ПЕЧЕНЬЕ",
+      "question": "Сладкое и хрустящее, к чаю",
+      "row": 0,
+      "col": 5,
+      "direction": "across"
+    },
+    {
+      "id": "w4",
+      "answer": "РАКЕТА",
+      "question": "На ней летят в космос",
+      "row": 1,
+      "col": 0,
+      "direction": "across"
+    },
+    {
+      "id": "w5",
+      "answer": "ПЕШЕХОД",
+      "question": "Человек, идущий по улице",
+      "row": 2,
+      "col": 7,
+      "direction": "down"
+    },
+    {
+      "id": "w6",
+      "answer": "ПОРТФЕЛЬ",
+      "question": "Школьная сумка",
+      "row": 3,
+      "col": 2,
+      "direction": "across"
+    },
+    {
+      "id": "w7",
+      "answer": "ПОМИДОР",
+      "question": "Красный овощ для салата",
+      "row": 3,
+      "col": 2,
+      "direction": "down"
+    },
+    {
+      "id": "w8",
+      "answer": "ВЕРБЛЮД",
+      "question": "«Корабль пустыни» с горбами",
+      "row": 5,
+      "col": 10,
+      "direction": "down"
+    },
+    {
+      "id": "w9",
+      "answer": "ФОНАРИК",
+      "question": "Светит в темноте, работает от батарейки",
+      "row": 7,
+      "col": 6,
+      "direction": "across"
+    },
+    {
+      "id": "w10",
+      "answer": "КОНЬКИ",
+      "question": "На них катаются по льду",
+      "row": 7,
+      "col": 12,
+      "direction": "down"
+    },
+    {
+      "id": "w11",
+      "answer": "КАРТИНА",
+      "question": "Её вешают на стену в рамке",
+      "row": 9,
+      "col": 0,
+      "direction": "across"
+    },
+    {
+      "id": "w12",
+      "answer": "ШОКОЛАД",
+      "question": "Сладкая плитка из какао",
+      "row": 11,
+      "col": 4,
+      "direction": "across"
+    }
+  ]
+}

@@ -1,0 +1,102 @@
+{
+  "id": 7,
+  "difficulty": 2,
+  "words": [
+    {
+      "id": "w1",
+      "answer": "ДЕЛЬФИН",
+      "question": "Умное морское животное, которое дышит воздухом",
+      "row": 0,
+      "col": 0,
+      "direction": "across"
+    },
+    {
+      "id": "w2",
+      "answer": "ЛИНЕЙКА",
+      "question": "Ею измеряют и чертят прямые линии",
+      "row": 0,
+      "col": 2,
+      "direction": "down"
+    },
+    {
+      "id": "w3",
+      "answer": "МИНУТА",
+      "question": "Шестьдесят секунд",
+      "row": 1,
+      "col": 11,
+      "direction": "down"
+    },
+    {
+      "id": "w4",
+      "answer": "ВРАТАРЬ",
+      "question": "Он защищает ворота команды",
+      "row": 2,
+      "col": 7,
+      "direction": "down"
+    },
+    {
+      "id": "w5",
+      "answer": "СВЕТОФОР",
+      "question": "У него три глаза: красный, жёлтый и зелёный",
+      "row": 3,
+      "col": 0,
+      "direction": "across"
+    },
+    {
+      "id": "w6",
+      "answer": "ТРАКТОР",
+      "question": "Работает в поле и пашет землю",
+      "row": 5,
+      "col": 7,
+      "direction": "across"
+    },
+    {
+      "id": "w7",
+      "answer": "РЮКЗАК",
+      "question": "Его несут на спине в походе",
+      "row": 5,
+      "col": 13,
+      "direction": "down"
+    },
+    {
+      "id": "w8",
+      "answer": "ЗАГАДКА",
+      "question": "Её отгадывают",
+      "row": 6,
+      "col": 1,
+      "direction": "across"
+    },
+    {
+      "id": "w9",
+      "answer": "ГРУЗОВИК",
+      "question": "Машина для перевозки грузов",
+      "row": 6,
+      "col": 3,
+      "direction": "down"
+    },
+    {
+      "id": "w10",
+      "answer": "БАРАБАН",
+      "question": "По нему стучат палочками",
+      "row": 7,
+      "col": 9,
+      "direction": "down"
+    },
+    {
+      "id": "w11",
+      "answer": "СОСУЛЬКА",
+      "question": "Ледяная «морковка», висящая на крыше",
+      "row": 10,
+      "col": 2,
+      "direction": "across"
+    },
+    {
+      "id": "w12",
+      "answer": "ПАВЛИН",
+      "question": "Птица с роскошным хвостом-веером",
+      "row": 12,
+      "col": 8,
+      "direction": "across"
+    }
+  ]
+}

@@ -1,0 +1,102 @@
+{
+  "id": 11,
+  "difficulty": 3,
+  "words": [
+    {
+      "id": "w1",
+      "answer": "АНТРАКТ",
+      "question": "Перерыв между действиями спектакля",
+      "row": 0,
+      "col": 3,
+      "direction": "across"
+    },
+    {
+      "id": "w2",
+      "answer": "ТУРБИНА",
+      "question": "Двигатель, вращаемый потоком пара или воды",
+      "row": 0,
+      "col": 5,
+      "direction": "down"
+    },
+    {
+      "id": "w3",
+      "answer": "ГОРИЗОНТ",
+      "question": "Линия, где небо словно сходится с землёй",
+      "row": 1,
+      "col": 11,
+      "direction": "down"
+    },
+    {
+      "id": "w4",
+      "answer": "МАРАФОН",
+      "question": "Бег на сорок два километра",
+      "row": 2,
+      "col": 3,
+      "direction": "across"
+    },
+    {
+      "id": "w5",
+      "answer": "КОНВЕЙЕР",
+      "question": "Движущаяся лента на заводе",
+      "row": 3,
+      "col": 0,
+      "direction": "down"
+    },
+    {
+      "id": "w6",
+      "answer": "МИНЕРАЛ",
+      "question": "Природное твёрдое вещество, например кварц",
+      "row": 3,
+      "col": 2,
+      "direction": "down"
+    },
+    {
+      "id": "w7",
+      "answer": "ОЛИМПИАДА",
+      "question": "Главные спортивные игры, проводятся раз в четыре года",
+      "row": 4,
+      "col": 0,
+      "direction": "across"
+    },
+    {
+      "id": "w8",
+      "answer": "ДОСПЕХИ",
+      "question": "Металлическая защита воина в бою",
+      "row": 4,
+      "col": 7,
+      "direction": "down"
+    },
+    {
+      "id": "w9",
+      "answer": "ПОРТРЕТ",
+      "question": "Картина, изображающая человека",
+      "row": 6,
+      "col": 9,
+      "direction": "down"
+    },
+    {
+      "id": "w10",
+      "answer": "МЕТЕОРИТ",
+      "question": "Камень, упавший на Землю из космоса",
+      "row": 8,
+      "col": 4,
+      "direction": "across"
+    },
+    {
+      "id": "w11",
+      "answer": "МИКРОБ",
+      "question": "Мельчайший организм, виден лишь под микроскопом",
+      "row": 10,
+      "col": 6,
+      "direction": "across"
+    },
+    {
+      "id": "w12",
+      "answer": "ПАРАШЮТ",
+      "question": "Купол, раскрывающийся при прыжке с высоты",
+      "row": 12,
+      "col": 3,
+      "direction": "across"
+    }
+  ]
+}

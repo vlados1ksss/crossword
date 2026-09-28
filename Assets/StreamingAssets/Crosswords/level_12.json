@@ -1,0 +1,102 @@
+{
+  "id": 12,
+  "difficulty": 3,
+  "words": [
+    {
+      "id": "w1",
+      "answer": "РЕКОРД",
+      "question": "Наилучшее достижение в спорте",
+      "row": 0,
+      "col": 2,
+      "direction": "down"
+    },
+    {
+      "id": "w2",
+      "answer": "ЦУНАМИ",
+      "question": "Огромная волна после подводного землетрясения",
+      "row": 0,
+      "col": 8,
+      "direction": "down"
+    },
+    {
+      "id": "w3",
+      "answer": "ЛЕДНИК",
+      "question": "Медленно движущаяся масса льда в горах",
+      "row": 1,
+      "col": 1,
+      "direction": "across"
+    },
+    {
+      "id": "w4",
+      "answer": "ПЕЩЕРА",
+      "question": "Подземная полость со сталактитами",
+      "row": 2,
+      "col": 11,
+      "direction": "down"
+    },
+    {
+      "id": "w5",
+      "answer": "ПЛОТИНА",
+      "question": "Сооружение, перегораживающее реку",
+      "row": 3,
+      "col": 0,
+      "direction": "across"
+    },
+    {
+      "id": "w6",
+      "answer": "ДЖУНГЛИ",
+      "question": "Густой непроходимый тропический лес",
+      "row": 5,
+      "col": 2,
+      "direction": "across"
+    },
+    {
+      "id": "w7",
+      "answer": "ЛЕТОПИСЬ",
+      "question": "Древнерусская запись событий по годам",
+      "row": 5,
+      "col": 7,
+      "direction": "down"
+    },
+    {
+      "id": "w8",
+      "answer": "БОЛОТО",
+      "question": "Топкое место с трясиной и мхом",
+      "row": 7,
+      "col": 3,
+      "direction": "down"
+    },
+    {
+      "id": "w9",
+      "answer": "ШТУРМАН",
+      "question": "Тот, кто прокладывает курс судна",
+      "row": 7,
+      "col": 6,
+      "direction": "across"
+    },
+    {
+      "id": "w10",
+      "answer": "РЫЦАРЬ",
+      "question": "Воин в доспехах на коне",
+      "row": 7,
+      "col": 9,
+      "direction": "down"
+    },
+    {
+      "id": "w11",
+      "answer": "ВИТАМИН",
+      "question": "Полезное вещество в овощах и фруктах",
+      "row": 10,
+      "col": 6,
+      "direction": "across"
+    },
+    {
+      "id": "w12",
+      "answer": "СЛОВАРЬ",
+      "question": "Книга, в которой объясняют значения слов",
+      "row": 12,
+      "col": 1,
+      "direction": "across"
+    }
+  ]
+}

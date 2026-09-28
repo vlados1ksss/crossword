@@ -1,100 +1,100 @@
 {
   "id": 4,
-  "difficulty": 4,
+  "difficulty": 1,
   "words": [
     {
       "id": "w1",
-      "answer": "ГИПОТЕНУЗА",
-      "question": "Сторона прямоугольного треугольника, лежащая против прямого угла",
+      "answer": "ПЕСОК",
+      "question": "Из него строят замки на пляже",
       "row": 0,
-      "col": 3,
-      "direction": "across"
+      "col": 0,
+      "direction": "down"
     },
     {
       "id": "w2",
-      "answer": "ТРОПОСФЕРА",
-      "question": "Нижний слой атмосферы Земли",
-      "row": 0,
-      "col": 7,
+      "answer": "МЫЛО",
+      "question": "Им моют руки",
+      "row": 1,
+      "col": 3,
       "direction": "down"
     },
     {
       "id": "w3",
-      "answer": "АРХИПЕЛАГ",
-      "question": "Группа близко расположенных островов",
+      "answer": "ПЛАТЬЕ",
+      "question": "Нарядная одежда для девочки",
       "row": 1,
-      "col": 2,
-      "direction": "down"
-    },
-    {
-      "id": "w4",
-      "answer": "ХРОМОСОМА",
-      "question": "Структура клеточного ядра, несущая наследственную информацию",
-      "row": 2,
-      "col": 1,
-      "direction": "across"
-    },
-    {
-      "id": "w5",
-      "answer": "ПЕРИМЕТР",
-      "question": "Сумма длин всех сторон многоугольника",
-      "row": 3,
-      "col": 12,
-      "direction": "down"
-    },
-    {
-      "id": "w6",
-      "answer": "ПАЛИНДРОМ",
-      "question": "Слово или фраза, читающиеся одинаково в обе стороны",
-      "row": 3,
-      "col": 14,
-      "direction": "down"
-    },
-    {
-      "id": "w7",
-      "answer": "БИССЕКТРИСА",
-      "question": "Луч, делящий угол пополам",
-      "row": 4,
-      "col": 4,
-      "direction": "down"
-    },
-    {
-      "id": "w8",
-      "answer": "ФОТОСИНТЕЗ",
-      "question": "Процесс образования органических веществ растениями на свету",
-      "row": 4,
       "col": 9,
       "direction": "down"
     },
     {
-      "id": "w9",
-      "answer": "ИЕРОГЛИФ",
-      "question": "Письменный знак в китайской письменности",
-      "row": 6,
-      "col": 0,
+      "id": "w4",
+      "answer": "МАШИНА",
+      "question": "У неё четыре колеса и руль",
+      "row": 3,
+      "col": 5,
       "direction": "down"
     },
     {
+      "id": "w5",
+      "answer": "МЫШКА",
+      "question": "Маленький серый зверёк, который боится кошки",
+      "row": 3,
+      "col": 5,
+      "direction": "across"
+    },
+    {
+      "id": "w6",
+      "answer": "КОРОВА",
+      "question": "Она мычит и даёт молоко",
+      "row": 4,
+      "col": 0,
+      "direction": "across"
+    },
+    {
+      "id": "w7",
+      "answer": "ШАПКА",
+      "question": "Её надевают на голову зимой",
+      "row": 5,
+      "col": 7,
+      "direction": "down"
+    },
+    {
+      "id": "w8",
+      "answer": "ГРУША",
+      "question": "Фрукт, похожий по форме на лампочку",
+      "row": 6,
+      "col": 1,
+      "direction": "down"
+    },
+    {
+      "id": "w9",
+      "answer": "ПТИЦА",
+      "question": "У неё есть крылья, клюв и перья",
+      "row": 6,
+      "col": 3,
+      "direction": "across"
+    },
+    {
       "id": "w10",
-      "answer": "КАТАЛИЗАТОР",
-      "question": "Вещество, ускоряющее химическую реакцию",
-      "row": 9,
-      "col": 4,
+      "answer": "КУРИЦА",
+      "question": "Она несёт яйца",
+      "row": 8,
+      "col": 0,
       "direction": "across"
     },
     {
       "id": "w11",
-      "answer": "ЛАБИРИНТ",
-      "question": "Запутанная сеть ходов, из которой трудно найти выход",
-      "row": 11,
-      "col": 0,
+      "answer": "ПАРТА",
+      "question": "Школьный стол",
+      "row": 9,
+      "col": 6,
       "direction": "across"
     },
     {
       "id": "w12",
-      "answer": "МЕТАФОРА",
-      "question": "Перенос значения слова по сходству",
-      "row": 14,
+      "answer": "АРБУЗ",
+      "question": "Большая полосатая ягода",
+      "row": 10,
       "col": 1,
       "direction": "across"
     }

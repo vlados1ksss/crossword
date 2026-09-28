@@ -37,8 +37,34 @@ namespace CrosswordGame
             }
 
             if (Data == null) Data = new SaveData();
+            Migrate();
             if (Data.maxUnlockedLevel < 1) Data.maxUnlockedLevel = 1;
             if (Data.selectedLevel < 1) Data.selectedLevel = 1;
+        }
+
+        /// <summary>
+        /// Версия 1 содержала 5 уровней (по одному на сложность). В версии 2 уровней 20 и они
+        /// отсортированы по сложности, поэтому старые номера переносятся на новые: 1, 5, 9, 13, 17.
+        /// </summary>
+        private void Migrate()
+        {
+            if (Data.version >= SaveData.CurrentVersion) return;
+
+            if (Data.version <= 1)
+            {
+                foreach (var level in Data.levels)
+                    level.levelNumber = MapVersion1Level(level.levelNumber);
+                Data.maxUnlockedLevel = MapVersion1Level(Data.maxUnlockedLevel);
+                Data.selectedLevel = MapVersion1Level(Data.selectedLevel);
+            }
+
+            Data.version = SaveData.CurrentVersion;
+            Save();
+        }
+
+        private static int MapVersion1Level(int oldNumber)
+        {
+            return oldNumber >= 1 && oldNumber <= 5 ? (oldNumber - 1) * 4 + 1 : oldNumber;
         }
 
         public void Save()

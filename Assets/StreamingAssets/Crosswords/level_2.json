@@ -1,101 +1,101 @@
 {
   "id": 2,
-  "difficulty": 2,
+  "difficulty": 1,
   "words": [
     {
       "id": "w1",
-      "answer": "ЧАСЫ",
-      "question": "Показывают время",
+      "answer": "КУБИКИ",
+      "question": "Из них строят башню",
       "row": 0,
-      "col": 0,
+      "col": 5,
       "direction": "across"
     },
     {
       "id": "w2",
-      "answer": "СНЕГ",
-      "question": "Белые хлопья, падающие зимой",
+      "answer": "БАБУШКА",
+      "question": "Мама мамы",
       "row": 0,
-      "col": 2,
+      "col": 7,
       "direction": "down"
     },
     {
       "id": "w3",
-      "answer": "ПОДАРОК",
-      "question": "Его дарят на день рождения",
+      "answer": "КОРАБЛЬ",
+      "question": "Он плывёт по морю",
       "row": 0,
       "col": 9,
       "direction": "down"
     },
     {
       "id": "w4",
-      "answer": "ПОДУШКА",
-      "question": "На неё кладут голову во время сна",
-      "row": 1,
+      "answer": "КОНФЕТА",
+      "question": "Сладость в яркой обёртке",
+      "row": 2,
       "col": 4,
       "direction": "down"
     },
     {
       "id": "w5",
-      "answer": "АПЕЛЬСИН",
-      "question": "Оранжевый цитрусовый фрукт",
-      "row": 1,
-      "col": 7,
-      "direction": "down"
-    },
-    {
-      "id": "w6",
-      "answer": "ВЕЛОСИПЕД",
-      "question": "Двухколёсный транспорт с педалями",
-      "row": 2,
-      "col": 1,
+      "answer": "ЦВЕТОК",
+      "question": "Его поливают, у него есть лепестки",
+      "row": 3,
+      "col": 0,
       "direction": "across"
     },
     {
-      "id": "w7",
-      "answer": "БАБОЧКА",
-      "question": "Насекомое с яркими крыльями",
-      "row": 4,
+      "id": "w6",
+      "answer": "ДВЕРЬ",
+      "question": "Её открывают, чтобы войти в дом",
+      "row": 6,
       "col": 1,
       "direction": "down"
     },
     {
+      "id": "w7",
+      "answer": "ТЕТРАДЬ",
+      "question": "В ней пишут на уроке",
+      "row": 6,
+      "col": 3,
+      "direction": "across"
+    },
+    {
       "id": "w8",
-      "answer": "КАРАНДАШ",
-      "question": "Им рисуют, а когда он затупится — точат",
-      "row": 4,
-      "col": 11,
+      "answer": "ДОРОГА",
+      "question": "По ней едут машины",
+      "row": 6,
+      "col": 8,
       "direction": "down"
     },
     {
       "id": "w9",
-      "answer": "ОБЛАКО",
-      "question": "Белое и пушистое, плывёт по небу",
-      "row": 6,
-      "col": 0,
-      "direction": "across"
+      "answer": "КУКЛА",
+      "question": "Игрушка, похожая на маленького человека",
+      "row": 7,
+      "col": 10,
+      "direction": "down"
     },
     {
       "id": "w10",
-      "answer": "ПИНГВИН",
-      "question": "Птица, которая не летает, но отлично плавает",
+      "answer": "ЗЕРКАЛО",
+      "question": "В него смотрятся",
       "row": 8,
-      "col": 5,
+      "col": 0,
       "direction": "across"
     },
     {
       "id": "w11",
-      "answer": "ШКОЛА",
-      "question": "Там учатся дети",
+      "answer": "НОСКИ",
+      "question": "Их надевают на ноги",
       "row": 9,
-      "col": 0,
+      "col": 7,
       "direction": "across"
     },
     {
       "id": "w12",
-      "answer": "РАДУГА",
-      "question": "Разноцветная дуга на небе после дождя",
-      "row": 10,
-      "col": 6,
+      "answer": "КАПУСТА",
+      "question": "Из неё варят щи",
+      "row": 11,
+      "col": 2,
       "direction": "across"
     }
   ]

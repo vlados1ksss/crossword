@@ -57,7 +57,7 @@ namespace CrosswordGame
             Save = new SaveManager();
             Save.Load();
 
-            Ads = new AdsManager(AdsManager.CreateDefaultService());
+            Ads = new AdsManager(PlatformBridge.CreateAdsBackend(this), this);
             Ads.Initialize();
 
             Levels = new LevelManager();
